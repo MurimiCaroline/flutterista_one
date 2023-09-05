@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterista_one/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,20 +11,10 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Adventure"),
-          actions: [
-            IconButton(onPressed: () {}, icon: const Icon(
-              Icons.search,
-              color: Colors.white,
-            ),
-            ),
-          ],
-                 ),
-                      ),
+        home: HomePage(),
+                    
     );
   }
 }
